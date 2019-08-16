@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Highcharts</title>
+    <title>Quantidade de Vendas</title>
     <link rel="stylesheet" href="highcharts.css">
 </head>
 <body>
@@ -26,12 +26,41 @@
                 },
                 series: [
                     {
+                        name: "Janeiro",
                         data: data
+                    },
+                    {
+                        name: "Fevereiro",
+                        data: [3,5,7,15,10]
+                    },
+                    {
+                        name: "Março",
+                        data: [3,5,7,15,10]
+                    },
+                    {
+                        name: "Abril",
+                        data: [7,3,7,14,14]
+                    },
+                    {
+                        name: "Maio",
+                        data: [13,8,14,6,4]
                     }
                 ]
             };
 
-    new Highcharts.Chart(options)
+    
+    
+    const chart = new Highcharts.Chart(options)
+
+    for (let i = 0; i <= 5; i++) {
+        setTimeout(() => {
+            chart.addSeries({
+                name: "Janeiro",
+                data: [14,9,15,7,5]
+            })
+        }, i * 1000);
+    }
+    
     </script>
 </body>
 </html>
