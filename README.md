@@ -2,4 +2,4 @@
 ## Projeto com graficos utilizando Highcharts
 
 
-[Contato](http://jos3duardo.xyz/)
+[Contato - jos3duardo.xyz](http://jos3duardo.xyz/)
